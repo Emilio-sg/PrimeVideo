@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_home {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.nav_language {
+  display: none;
+}
+
+.nav_user_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.main {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_top_image {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: right;
+}
+.main_bottom_title {
+  color: white;
+  font-weight: bold;
+}
+.main_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.main_bottom p {
+  padding: 10px;
+  color: white;
+}
+.main_bottom button {
+  height: 55px;
+  width: 250px;
+  color: #fff;
+  background-color: #0f79af;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cards {
+  padding: 10px;
+}
+.cards_card {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+.footer_image {
+  width: 100px;
+}
+.footer_link {
+  text-decoration: none;
+  color: #0f79bf;
+}
+.footer_text {
+  color: #949494;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main_top_image {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .header_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav_home {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding-right: 100px;
+    font-size: xx-large;
+  }
+  .nav_language {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+  }
+  .nav_language img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav_user_icon {
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+  }
+
+  .main_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+  }
+}
